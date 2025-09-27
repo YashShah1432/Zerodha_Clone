@@ -80,7 +80,14 @@ The dashboard provides an administrative interface.
     npm install
     ```
 
-3.  **Run the development server:**
+3.  **Create a `.env` file:**
+    Create a file named `.env` in the `dashboard` directory. You will need to sign up for a free API key from [Finnhub](https://finnhub.io/) and add it to the file like this:
+    ```
+    VITE_STOCK_API_KEY=your_finnhub_api_key
+    VITE_STOCK_URL=https://finnhub.io/api/v1/quote?
+    ```
+
+4.  **Run the development server:**
     ```sh
     npm run dev
     ```
