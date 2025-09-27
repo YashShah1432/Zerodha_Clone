@@ -10,13 +10,11 @@ services:
     name: frontend
     env: static
     rootDir: frontend
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
   - type: web
     name: dashboard
     env: static
     rootDir: dashboard
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
